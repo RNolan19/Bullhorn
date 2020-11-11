@@ -1,1 +1,251 @@
 @import '~bootstrap/scss/bootstrap';
+
+*,
+*::after,
+*::before {
+
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; // aka 10px or 1rem
+}
+
+.navbar {
+  align-items: center;
+  background: white;
+  display: flex;
+  font-size: 2rem;
+  height: 10vh;
+
+  &-logo {
+
+    font-weight: 700;
+
+
+    width: 50%;
+
+  &-img {
+    margin-left: 10%;
+    margin-bottom: 15px;
+  }
+}
+
+  &-text {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+
+  }
+}
+
+.header {
+  background-image: url(https://www.bullhorn.com/wp-content/uploads/2020/02/RAO_masthead_v2Artboard-1_ef7721c37ff110c0d9cdc0e05cc44307.jpg);
+  background-size: cover;
+  color: white;
+  height: 60vh;
+  font-family: sans-serif;
+
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+
+    &_h1 {
+      font-size: 5rem;
+      font-weight: 700;
+
+    }
+
+    &_p {
+      font-size: 2rem;
+    }
+  }
+}
+
+.customers {
+  display: flex;
+  height: 50vh;
+
+  &-left {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    &-text {
+
+      width: 60%;
+
+
+    &_h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      padding-bottom: 25px;
+    }
+
+    &_p {
+      font-size: 1.5rem;
+      width: 80%;
+    }
+    }
+  }
+
+
+  &-right {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+  }
+  &-image {
+    height: 50%;
+    width: 65%;
+  }
+}
+
+.values {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+    background-color: #202945;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.5rem;
+      width: 45%;
+    }
+
+  &-team {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 100%;
+    width: 33%;
+  }
+
+  &-truth {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 33%;
+  }
+
+  &-platform {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 33%;
+  }
+}
+
+.innovating {
+  height: 60vh;
+  width: 100%;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex start;
+    height: 100%;
+    width: 100%;
+
+    &-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 5%;
+      margin-bottom: 5%;
+
+      &_a1 {
+        border-bottom: orange solid;
+      }
+
+      a{
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: orange;
+            text-decoration-thickness: 2rem;
+          }
+      }
+    }
+    &-lower {
+      display: flex;
+
+        &_left {
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center
+        }
+
+        &_right {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h2 {
+            font-weight: 600;
+            font-size: 4rem;
+            padding-bottom: 25px;
+          }
+
+          p {
+            width: 60%;
+            font-size: 1.5rem;
+          }
+        }
+
+}
+  }
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  // display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
